@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>cce98938-947d-45b7-86fe-161ef15f8c52</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Company.Cars.Application\Company.Cars.Application.csproj" />
+    <ProjectReference Include="..\Blocks\Company.Cars.Blocks.Bootstrap\Company.Cars.Blocks.Bootstrap.csproj" />
+    <ProjectReference Include="..\Blocks\Company.Cars.Blocks.Common.Mapping.Configuration\Company.Cars.Blocks.Common.Mapping.Configuration.csproj" />
+    <ProjectReference Include="..\Infrastructure\Company.Cars.Infrastructure.Database.Mssql\Company.Cars.Infrastructure.Database.Mssql.csproj" />
+    <ProjectReference Include="..\Presentation\Company.Cars.Presentation.Api\Company.Cars.Presentation.Api.csproj" />
+  </ItemGroup>
+
+  
+</Project>

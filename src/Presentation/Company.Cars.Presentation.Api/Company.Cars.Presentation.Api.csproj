@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Internal\Configuration\**" />
+    <EmbeddedResource Remove="Internal\Configuration\**" />
+    <None Remove="Internal\Configuration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.4.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Company.Cars.Application\Company.Cars.Application.csproj" />
+    <ProjectReference Include="..\..\Blocks\Company.Cars.Blocks.Common.Serilog.Configuration\Company.Cars.Blocks.Common.Serilog.Configuration.csproj" />
+    <ProjectReference Include="..\..\Blocks\Company.Cars.Blocks.Common.Swagger.Configuration\Company.Cars.Blocks.Common.Swagger.Configuration.csproj" />
+    <ProjectReference Include="..\..\Blocks\Company.Cars.Blocks.Presentation.Api.Configuration\Company.Cars.Blocks.Presentation.Api.Configuration.csproj" />
+   
+  </ItemGroup>
+
+
+</Project>
